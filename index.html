@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nevyon DataLabs — AI &amp; Data Engineering for Pharma and Healthcare Research</title>
+<meta name="description" content="Nevyon DataLabs turns clinical and research data into real-world evidence based predictions — computational pathology, medical imaging, and privacy-preserving MLOps pipelines for pharmaceutical and healthcare research.">
+<link rel="icon" href="assets/logo.jpg">
+<style>
+  :root{
+    --ink:#12243B;
+    --ink-soft:#3E5064;
+    --paper:#F6F9FC;
+    --paper-alt:#FFFFFF;
+    --line:#DCE4EC;
+    --blue:#0C4DA6;
+    --blue-deep:#0A3C82;
+    --teal:#12946F;
+    --teal-soft:#E4F3EC;
+    --blue-soft:#E6EEF9;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--blue-deep);}
+  img{max-width:100%;display:block;}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+
+  /* Top bar */
+  header.site{
+    position:sticky; top:0; z-index:10;
+    background:rgba(246,249,252,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;max-width:1080px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;letter-spacing:-0.01em;}
+  .brand img{width:34px;height:34px;object-fit:contain;border-radius:6px;}
+  nav.top-links{display:flex;gap:28px;font-size:0.95rem;}
+  nav.top-links a{color:var(--ink-soft);text-decoration:none;}
+  nav.top-links a:hover{color:var(--blue-deep);}
+  .cta-small{
+    background:var(--blue-deep); color:#fff !important; padding:9px 18px;
+    border-radius:7px; font-weight:600; font-size:0.9rem; text-decoration:none;
+  }
+
+  /* Hero */
+  .hero{padding:56px 0 20px;}
+  .hero-banner{border-radius:14px; overflow:hidden; box-shadow:0 18px 40px -22px rgba(10,60,130,0.35); border:1px solid var(--line);}
+  .hero-banner img{width:100%; height:auto;}
+
+  /* Section rhythm */
+  section{padding:64px 0;}
+  h2{
+    font-size:1.7rem; letter-spacing:-0.01em; margin:0 0 18px;
+    color:var(--ink);
+  }
+  .lede{max-width:640px; color:var(--ink-soft); font-size:1.05rem;}
+
+  /* About */
+  .about-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start;}
+  .about-grid p{color:var(--ink-soft); font-size:1.02rem;}
+  .fact-card{
+    background:var(--paper-alt); border:1px solid var(--line); border-radius:12px;
+    padding:22px 24px;
+  }
+  .fact-card h3{margin:0 0 10px; font-size:0.95rem; text-transform:none; color:var(--blue-deep);}
+  .fact-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; font-size:0.92rem; color:var(--ink-soft);}
+  .fact-list li{padding-left:16px; position:relative;}
+  .fact-list li::before{content:""; position:absolute; left:0; top:9px; width:6px; height:6px; border-radius:50%; background:var(--teal);}
+
+  /* Capabilities */
+  .cap-section{background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .cap-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-top:8px;}
+  .cap-item{background:var(--paper-alt); padding:26px 24px;}
+  .cap-item h3{margin:0 0 8px; font-size:1rem; color:var(--ink);}
+  .cap-item p{margin:0; font-size:0.9rem; color:var(--ink-soft);}
+
+  /* Approach / values strip, reused from the banner's bottom bar concept but as text, not repeating the image */
+  .strip{
+    display:flex; flex-wrap:wrap; gap:14px 34px; padding:22px 0 0;
+    border-top:1px solid var(--line); margin-top:36px;
+  }
+  .strip span{font-size:0.88rem; color:var(--ink-soft); display:flex; align-items:center; gap:8px;}
+  .strip span::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--blue);}
+
+  /* Contact */
+  .contact{
+    background:linear-gradient(120deg,var(--blue-deep),var(--teal));
+    color:#fff; border-radius:16px; padding:48px 44px; margin:0 auto;
+    max-width:1080px;
+  }
+  .contact h2{color:#fff;}
+  .contact p{color:rgba(255,255,255,0.88); max-width:520px; font-size:1.02rem;}
+  .contact-actions{display:flex; gap:14px; margin-top:22px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; padding:12px 22px; border-radius:8px; font-weight:600;
+    text-decoration:none; font-size:0.95rem;
+  }
+  .btn-solid{background:#fff; color:var(--blue-deep);}
+  .btn-outline{border:1px solid rgba(255,255,255,0.6); color:#fff;}
+
+  footer{padding:34px 0 50px; color:var(--ink-soft); font-size:0.85rem;}
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;}
+
+  @media (max-width:760px){
+    .about-grid{grid-template-columns:1fr;}
+    .cap-grid{grid-template-columns:1fr;}
+    nav.top-links{display:none;}
+    .contact{padding:36px 24px;}
+    section{padding:44px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="topbar">
+    <div class="brand"><img src="assets/logo.jpg" alt="Nevyon DataLabs"> Nevyon DataLabs</div>
+    <nav class="top-links">
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cta-small" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div class="hero-banner">
+    <img src="assets/banner.png" alt="Nevyon DataLabs — From complex clinical data to real-world impact. Pathology images, medical imaging, structured clinical data and research &amp; trial data flow through AI &amp; ML pipelines into real-world evidence, producing faster decisions, greater confidence and better patient outcomes.">
+  </div>
+</div>
+
+<section id="about" class="wrap">
+  <div class="about-grid">
+    <div>
+      <h2>Data science built for clinical and pharmaceutical research</h2>
+      <p>Nevyon DataLabs is a data and AI consultancy focused on turning complex clinical and research data into real-world evidence based predictions that support faster, more confident decision-making in pharmaceutical and healthcare research.</p>
+      <p>Work spans computational pathology and whole-slide imaging, medical imaging pipelines, and structured clinical data — built as production-ready MLOps infrastructure rather than research prototypes that never leave the lab. Every pipeline is designed with privacy-preserving principles at its core, so sensitive healthcare data stays protected throughout the analysis lifecycle.</p>
+    </div>
+    <div class="fact-card">
+      <h3>At a glance</h3>
+      <ul class="fact-list">
+        <li>Computational pathology &amp; whole-slide imaging (WSI)</li>
+        <li>Medical imaging — CT, MRI, radiology pipelines</li>
+        <li>Structured clinical &amp; trial data</li>
+        <li>Privacy-preserving, GDPR-compliant infrastructure</li>
+        <li>Production MLOps, not research prototypes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="cap-section">
+  <div class="wrap">
+    <h2>Where the work happens</h2>
+    <p class="lede">Four areas, from raw clinical data through to a decision a pharmaceutical or healthcare team can act on.</p>
+    <div class="cap-grid">
+      <div class="cap-item">
+        <h3>Pathology &amp; imaging</h3>
+        <p>Whole-slide imaging pipelines, digital pathology, and medical imaging (CT, MRI) — the data types that need domain-specific handling to be useful for AI.</p>
+      </div>
+      <div class="cap-item">
+        <h3>AI &amp; ML pipelines</h3>
+        <p>Deep learning and domain adaptation methods applied to messy, real-world clinical data — not benchmark datasets.</p>
+      </div>
+      <div class="cap-item">
+        <h3>Real-world evidence</h3>
+        <p>Turning model output into evidence a research or clinical team can actually stand behind, with a clear line back to the underlying data.</p>
+      </div>
+      <div class="cap-item">
+        <h3>MLOps &amp; deployment</h3>
+        <p>Cloud-based infrastructure that gets a pipeline from a working notebook to something a client's team can run in production.</p>
+      </div>
+      <div class="cap-item">
+        <h3>Privacy by design</h3>
+        <p>GDPR-compliant data handling built in from the first design decision, not bolted on before a compliance review.</p>
+      </div>
+      <div class="cap-item">
+        <h3>Clinical data engineering</h3>
+        <p>Getting the unglamorous data plumbing right — the part that determines whether everything downstream actually works.</p>
+      </div>
+    </div>
+
+    <div class="strip">
+      <span>Clinical &amp; research data expertise</span>
+      <span>Computational pathology, medical imaging &amp; machine learning</span>
+      <span>Privacy-preserving by design</span>
+      <span>Production-ready MLOps pipelines</span>
+      <span>Impact-driven outcomes</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="contact">
+    <h2>Let's talk about your data</h2>
+    <p>For pharmaceutical and healthcare organizations working on AI-driven, real-world evidence based research.</p>
+    <div class="contact-actions">
+      <a class="btn btn-solid" href="mailto:hello@nevyondatalabs.com">Email hello@nevyondatalabs.com</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/company/nevyondatalabs" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="footer-row">
+    <span>© 2026 Nevyon DataLabs AS · Norway</span>
+    <span>Data &amp; AI for pharmaceutical and healthcare research</span>
+  </div>
+</footer>
+
+</body>
+</html>
