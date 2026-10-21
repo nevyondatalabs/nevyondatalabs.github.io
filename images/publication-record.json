@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-10-21",
+    "category": "company update",
+    "topic": "Medical AI for pharma and healthtech banner",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7518600812017680384",
+    "status": "existing publication verified; automation skipped to avoid duplicate",
+    "sources": [],
+    "image_attribution": "Nevyon DataLabs banner; built-in image generation, existing post"
+  },
+  {
+    "date": "2026-10-21",
+    "category": "research update",
+    "topic": "PD-L1 scoring agreement between AI and a pathologist; ESMO preview",
+    "source_urls": [
+      "https://www.lunit.io/en/media-hub/lunit-highlights-ai-powered-pathology-insights-across-cancer-types-at-esmo-2026/"
+    ],
+    "image_attribution": "Original explanatory graphic generated for Nevyon; based on Lunit announcement; no reproduced source artwork",
+    "post_url": "https://www.linkedin.com/feed/update/urn:li:share:7518606487406157824/",
+    "status": "published and verified; explicit user exception to daily limit"
+  }
+]
