@@ -1,0 +1,43 @@
+NEVYON DATALABS — UPLOAD AND SHARE
+21 October 2026
+
+The website files are ready locally. Nothing has been deployed or posted to LinkedIn.
+
+1. PUBLISH THE WEBSITE THROUGH YOUR EXISTING GITHUB REPOSITORY
+
+Unzip nevyon-website-update.zip. The files to publish are:
+  index.html
+  images/nevyon-preview.jpg
+
+All in-page demo images, styles and interactions are embedded in index.html. The separate JPEG supplies the social link preview. Keep the existing CNAME file and the other repository assets, including the founder portrait.
+
+Open https://github.com/nevyondatalabs/nevyondatalabs.github.io
+On the branch used by GitHub Pages, choose Add file > Upload files. Upload the new index.html to the repository root, replacing the existing one. Drag in the included images folder, preserving the path images/nevyon-preview.jpg. Review the changes and commit them, or use a branch and merge its pull request into the Pages publishing branch. A suitable commit message is: Update Nevyon website with clinical AI and signal workflows.
+
+Do not upload the ZIP itself, local backup HTML files, the Downloads folder or reference-analysis. README.txt, this guide and image-prompts.txt are handover notes; they are not required for hosting.
+
+Check the repository’s Actions or Pages deployment status. Once it succeeds, open https://www.nevyondatalabs.com/ and refresh. Verify the three opening modes, preprocessing, pathology patch flow, MRI contrast and overlay sliders, report tabs, time-series controls and contact links. Also open https://www.nevyondatalabs.com/images/nevyon-preview.jpg to confirm that the share image is public.
+
+If the old page remains visible, try a hard refresh or a private window. If the deployment fails, inspect its error before uploading again.
+
+GitHub instructions:
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+2. ADD THE WEBSITE TO NEVYON’S LINKEDIN PAGE
+
+LinkedIn displays your website link; it does not host this HTML file.
+
+Open the Nevyon DataLabs company page as a super admin (company ID 146615077). Choose Edit page, open the section containing the website URL, set it to https://www.nevyondatalabs.com/ and save. Check the public company page to confirm that the link opens the updated website.
+
+LinkedIn instructions:
+https://www.linkedin.com/help/linkedin/answer/a564346/edit-your-linkedin-page-or-showcase-page?lang=en
+
+3. SHARE THE UPDATED WEBSITE IN A COMPANY POST
+
+After deployment, create a post as Nevyon DataLabs and paste https://www.nevyondatalabs.com/ . Check the author, link and preview before publishing. The page includes a title, description and public image URL for link previews. LinkedIn may cache an older preview; the official Post Inspector can refresh the website metadata after the site is live:
+https://www.linkedin.com/post-inspector/
+
+You can attach a screenshot of the interactive workflow instead if that tells the story more clearly. Describe the visuals as synthetic demonstrations of engineering capabilities. They are not clinical case studies, validated predictions or customer deployments.
+
+No LinkedIn post has been created or published as part of this website update.
